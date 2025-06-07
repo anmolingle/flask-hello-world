@@ -8,7 +8,7 @@ def VIdeo_download(URL):
     video_url = URL
     global COUNT
     custom_name = f'Your_youtube_video{COUNT}'
-    save_path = f"./static/videos/{custom_name}.%(ext)s"
+    save_path = f"../static/videos/{custom_name}.%(ext)s"
     ydl_opts = {
     'format': 'best',  # Automatically select the best available format
     'outtmpl': save_path,  # Save to specified folder with title as filename
